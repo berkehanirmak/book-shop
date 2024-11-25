@@ -1,0 +1,110 @@
+[
+    {
+       "id":1,
+       "title":"Söyleme Bilmesinler",
+       "price":59.80 ,
+       "image":"https://image01.idefix.com/resize/800/0/product/1457375/soyleme-bilmesinler-65782f4bd39ec.jpg"
+
+    },
+    {
+
+        "id":2,
+        "title":"Muhteşem Bilim İnsanları",
+        "price":39.9 ,
+        "image":"https://image01.idefix.com/resize/800/0/product/1340293/muhtesem-bilim-insanlari-6560b70a2816b.jpg"
+    },
+    {
+        "id":3,
+        "title":"Postane Günlükleri",
+        "price":78.9 ,
+        "image":"https://image01.idefix.com/resize/800/0/product/1412155/postane-gunlukleri-6569ffea4037c.jpg"
+
+    },
+    {
+        "id":4,
+        "title":"Kızılelma Neresi",
+        "price":39.9 ,
+        "image":"https://image01.idefix.com/resize/800/0/product/308647/kizilelma-neresi-secme-oykuler-64379d9fe688b.jpg"
+    },
+    {
+        "id":5,
+        "title":"Haki Gömlek",
+        "price":349 ,
+        "image":"https://image01.idefix.com/resize/800/0/product/329346/ilk-namaz-6437e463310cd.jpg"
+ 
+     },
+     {
+ 
+         "id":6,
+         "title":"Kahverengi Gömlek",
+         "price":349 ,
+         "image":"https://image01.idefix.com/resize/800/0/product/922416/995-km-651445283a356.jpg"
+     },
+     {
+         "id":7,
+         "title":"Beyaz Gömlek",
+         "price":349 ,
+         "image":"https://image01.idefix.com/resize/800/0/product/1024437/ask-hikayesi-6530cdff97523.jpg"
+ 
+     },
+     {
+         "id":8,
+         "title":"Yeşil Gömlek",
+         "price":349 ,
+         "image":"https://image01.idefix.com/resize/800/0/product/264630/bilincaltinin-gucu-zihinsel-ve-bedensel-iyilesme-6437312480364.jpg"
+     },
+     {
+        "id":9,
+        "title":"Yeşil Gömlek",
+        "price":349 ,
+        "image":"https://image01.idefix.com/resize/800/0/product/220951/zeytindagi-6436c37bb5e0f.jpg"
+ 
+     },
+     {
+ 
+         "id":10,
+         "title":"Kırmızı Gömlek",
+         "price":399,
+         "image":"https://image01.idefix.com/resize/800/0/product/1465360/violeta-65786a8344e18.jpg"
+     },
+     {
+         "id":11,
+         "title":"Lacivert Gömlek",
+         "price":399,
+         "image":"https://image01.idefix.com/resize/800/0/product/411459/tuhafliklar-asansoru-hikaye-anahtarcisi-1-6471ea7a0d160.jpg"
+ 
+     },
+     {
+         "id":12,
+         "title":"Haki Gömlek",
+         "price":349,
+         "image":"https://image01.idefix.com/resize/800/0/product/509483/kayip-agaclar-adasi-64b110e7f0027.jpg"
+     },{
+        "id":13,
+        "title":"Yeşil Gömlek",
+        "price":349,
+        "image":"https://image01.idefix.com/resize/800/0/product/280373/dansa-davet-643758e5c42a2.jpg"
+ 
+     },
+     {
+ 
+         "id":14,
+         "title":"Kahve Gömlek",
+         "price":349,
+         "image":"https://image01.idefix.com/resize/800/0/product/1086696/yilan-avi-653a753fef62a.jpg"
+     },
+     {
+         "id":15,
+         "title":"Beyaz Gömlek",
+         "price":349,
+         "image":"https://image01.idefix.com/resize/800/0/product/209306/intihar-dukkani-6436a5ed9f535.jpg"
+ 
+     },
+     {
+         "id":16,
+         "title":"Yeşil Gömlek",
+         "price":349,
+         "image":"https://image01.idefix.com/resize/800/0/product/276037/sac-orgusu-64374e64eb083.jpg"
+     }
+
+]

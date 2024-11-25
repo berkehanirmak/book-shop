@@ -1,13 +1,515 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Jost',sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+header{
+background-color: #ffffff;
+padding: 2px 10%;
+position: fixed;
+width: 100%;
+top: 0;
+right: 0;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo img{
+max-width: 120px;
+height: auto;
+border-radius: 100px;
+}
+.navmenu{
+  display: flex;
+  
+}
+.navmenu a{
+  color: #2c2c2c;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: 400;
+  transition: all .42 ease;
+}
+
+.navmenu a:hover{
+  
+  color: #ee1c47;
+}
+
+.navmenu li:hover{
+  transform: scale(1.4);
+
+}
+.nav-icon{
+  display: flex;
+  align-items: center;
+}
+.nav-icon i{
+  margin-right: 20px;
+  color: #2c2c2c;
+  font-size: 28px;
+  font-weight: 400;
+  transition: all .42 ease;
+
+}
+.nav-icon i:hover{
+  transform: scale(1.4);
+  color: #ee1c47;
+}
+#menu-icon{
+
+font-size:35px ;
+color: #2c2c2c;
+cursor: pointer;
+
+}
+section{
+  padding: 5% 10%;
+}
+.main-home{
+  margin-top: 145px;
+  margin-left: 950px;
+
+}
+.hizala .main-text{
+  margin-top: -385px;
+  margin-left: 210px;
+  margin-bottom: 0;
+}
+.main-text h2{
+color: #ee1c47;
+text-transform: capitalize;
+font-family: cursive;
+margin-bottom: 32px;
+}
+
+.main-text h1{
+  color: black;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  font-size: 65px;
+  text-transform: capitalize;
+  line-height: 1.1;
+  margin: 6px 0 10px;
+  user-select: none;
+
+}
+
+
+.main-text p{
+  color: #333c56;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 50px;
+  animation: bounce 2s infinite; 
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+  transform: translateY(0); 
+}
+40% {
+  transform: translateY(-30px); 
+}
+60% {
+  transform: translateY(-15px); 
+}
+}
+
+.main-btn{
+  display: inline-block;
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 2px solid #111;
+  padding: 12px 25px;
+  transition: all .42 ease;
+}
+
+.main-btn:hover{
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.main-btn i{
+  vertical-align: middle;
+}
+
+.ratting i{
+color: #ff8c00;
+font-size: 18px;
+}
+.star{
+margin-top: 17px;
+
+}
+
+
+input[type=radio]{
+  display: none;
+}
+
+.bilgi{
+  color: rgb(212, 13, 13);
+  font-size: 14px;
+  padding: 7px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.heart-btn{
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+margin-top: 10px;
+margin-left: 212px;
+}
+.content{
+padding: 13px 16px;
+cursor: pointer;
+}
+.heart{
+position: absolute;
+background: url("img.png") no-repeat;
+background-size: 2900%;
+height: 90px;
+width: 90px;
+top: 50%;
+left: 82%;
+transform: translate(-50%,-50%);
+}
+.heart.heart-active{
+animation: animate .8s steps(28) 1;
+background-position: right;
+}
+@keyframes animate {
+0%{
+  background-position: left;
+}
+100%{
+  background-position: right;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.product {
+padding: 10px;
+background: #ffffffc5;
+border: 2px solid #ddd;
+margin-top:100px;
+width:20%;
+margin-left: 14px;
+}
+
+.product img{
+width:100%;
+height:auto;
+transition: all .40s;
+}
+.product img:hover{
+transform:scale(0.94);
+}
+/* Erkek Keten Gömlek yazısı*/
+.product h4{
+color:#000;
+font-style: italic;
+font-size:14px;
+margin-bottom:20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-top: 20px;
+}
+/* Fiyat yazısı */
+.product .price{
+
+color:#179b17;
+font-size: 20px; 
+font-weight: bold;
+}
+.product .actions{
+
+display:flex;
+align-items:center;
+margin-top:15px;
+}
+.actions button{
+height:40px;
+padding: 0 42px;
+flex:0;
+cursor:pointer;
+}
+.actions button[disabled]{
+opacity:.3;
+cursor:not-allowed;
+}
+
+.actions .buy-btn{
+background-color: #000;
+color: #f3f3f2;
+font-size:15px;
+font-family: unset;
+border-radius:0 7px 7px 0 ;  
+
+
+}
+.actions .buy-btn:hover{
+background-color:  #fff;
+color: #000 ;
+transition: 0.5s;
+}
+
+.actions .sell-btn{
+background-color:#7a7272;
+font-size:25px;
+border-radius:7px 0 0 7px;
+}
+.actions .sell-btn:hover{
+
+background-color: #ec0202;
+color: #fff;
+transition: 0.5s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hızlı Teslimat alanı */
+.product-text h5{
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-left: 25px;
+  font-weight: 500;
+  background-color: #27b737;
+  padding: 3px 10px;
+  border-radius: 2px;
+  user-select: none;
+  z-index: 900;
+}
+
+/* Kargo Bedava alanı */
+.product-text2 h4{
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 25px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 8px;
+  background-color: #fffcfc61;
+  border-radius: 3px;
+  user-select: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: 900;
+}
+.product-text3 h4{
+
+position: absolute;
+color: #fff;
+font-size: 12px;
+margin-top: 310px;
+margin-left: 25px;
+font-weight: 500;
+background-color: #ce2121;
+padding: 3px 10px;
+border-radius: 2px;
+user-select: none;
+z-index: 900;
+}
+
+/* Sayfa sonu bilgi kısmı */
+.footer {
+background-color: #222;
+color: #fff;
+display: grid;
+gap: 2rem; 
+}
+
+.footer-container {
+display: grid;
+grid-template-columns: repeat(auto,minmax(250px,auto));
+gap: 2rem; 
+margin-bottom: 3rem;  
+}
+
+.footer-column {
+flex: 1;
+margin: 0 20px;
+}
+
+.footer h3 {
+font-size: 20px;
+margin-bottom: 20px;
+margin-top: 25px;
+}
+
+.footer ul {
+list-style: none;
+padding: 0;
+}
+
+.footer li {
+margin-bottom: 10px;
+font-size: 16px;
+}
+.last{
+text-align: center;
+padding: 17px;
+background: #757575;
+margin-top: 25px;
+}
+
+/* Sağ alt köşe sayfa yukarı butonu */
+.scroll-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #079637;
+  transform: scale(1.4);
+}
+.scroll-button i{
+  font-size: 25px;
+}
+
+
+
+
+
+body{
+margin: 0;
+background:#eee ;
+-webkit-font-smoothing:antialiased ;
+-moz-osx-font-smoothing:grayscale; 
+
+}
+
+
+.container{
+  width: 1300px;
+  margin: 0 auto;
+
+}
+.products{
+  display: flex;
+  flex-wrap:wrap ;
+  gap: 65px;
+  margin-bottom:80px;
+}
+
+
+
+.carousel {
+  max-width: 350px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  
+}
+.carousel img {
+max-width: 100%; 
+height: auto; 
+border-radius: 5px; 
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+
+
+.basket-container {
+position: fixed;
+top: 150px;
+right: 20px;
+background-color: #ffffff;
+color: rgb(0, 0, 0);
+border-radius: 4px;
+padding: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+z-index: 999;
+max-height: 300px; 
+overflow-y: auto; /* Kaydırma çubuğunu etkinleştirir */
+}
+.basket-item {
+display: flex;
+justify-content: space-between;
+margin: 10px 0;
+padding: 5px;
+border-bottom: 1px solid #ddd;
+align-items: center;
+}
+.basket-item img {
+width: 80px; 
+height: 120px; 
+margin-left: 10px; 
+}
+.basket-total {
+font-weight: bold;
+font-size: 1.2rem;
+margin-top: 10px;
+}
+
+.basket-reset-button {
+background-color: #f44336;
+color: white;
+border: none;
+border-radius: 4px;
+padding: 10px 20px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.basket-reset-button:hover {
+background-color: #d32f2f;
+}
+.success {
+color: #4CAF50; 
+font-weight: bold;
+list-style-type: none; 
+margin-left:10px; 
 }
